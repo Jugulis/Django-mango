@@ -1,0 +1,28 @@
+ <html>
+
+ {%block content%}
+ {%load static%}
+ <head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to night city! {{name}}</h1>
+    <form method="POST">
+        Enter first name = <input type="text" name="first_name" id=""><br>
+        Enter last name = <input type="text" name="last_name"><br>
+        Enter Date of birth = <input type="date"><br>
+        <label for="Gender">Enter your gender = </label>
+        <select name="gender" id="gender">
+            <option value="Male">Werewolf</option>
+            <option value="Female">Dracula</option>
+            <option value="They/Them">Attack Helicopter</option>
+        </select><br>
+        Enter Phone number = <input type="number" name="phone_number"><br>
+        Enter Email Address = <input type="email" name="email"><br>
+        Enter Address = <input type="text" name="address"><br>
+        <button type="submit">submit</button>
+ 
+    </form>
+{%endblock%}
+</body>
+</html>
